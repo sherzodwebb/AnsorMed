@@ -40,7 +40,7 @@ body {
   padding-bottom: 24px;
 }
 
-.header-logo {
+.site-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,11 +53,11 @@ body {
   transition: color 0.2s ease, opacity 0.2s ease;
 }
 
-.header-logo:hover {
+.site-logo:hover {
   color: #de2e54;
 }
 
-.header-logo:active {
+.site-logo:active {
   opacity: 0.6;
 }
 
@@ -118,4 +118,34 @@ body {
   color: #fff;
   background-color: #de2e54;
   opacity: 0.6;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background-color: #222;
+}
+
+.footer-cantainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+}
+
+.footer-logo {
+  color: #fff;
+}
+
+.footer-logo:active {
+  color: #fff;
+}
+
+.sitenav-site-footer a {
+  color: #fff;
+}
+
+.sitenav-site-footer a:active {
+  color: #fff;
 }

@@ -1,18 +1,121 @@
 body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444;
+  font-style: normal;
   margin: 0;
   padding: 0;
+  background-color: #fff;
 }
 
 * {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 2px dotted #de2e54;
+  outline-offset: 2px;
+}
+
 /* CANTAINER */
 
 .cantainer {
   width: 100%;
+  max-width: 1160px;
+  box-sizing: border-box;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* SITE HEADER  */
+
+.header-cantainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #222;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.header-logo:hover {
+  color: #de2e54;
+}
+
+.header-logo:active {
+  opacity: 0.6;
+}
+
+.sitenav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.sitenav-item a {
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.sitenav-item a:hover {
+  color: #de2e54;
+}
+
+.sitenav-item a:active {
+  opacity: 0.6;
+}
+
+.main-link {
+  display: inline-block;
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 22px;
+  background-color: #de2e54;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  border: 2px solid #de2e54;
+  box-sizing: border-box;
+  transition: color 0.2s ease, bacground-color 0.2s ease, opacity 0.2s ease;
+}
+
+.main-link:hover {
+  color: #de2e54;
+  background-color: #fff;
+}
+
+.main-link:active {
+  color: #fff;
+  background-color: #de2e54;
+  opacity: 0.6;
 }

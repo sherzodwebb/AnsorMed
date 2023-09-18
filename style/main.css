@@ -120,6 +120,58 @@ body {
   opacity: 0.6;
 }
 
+.main-link-solid:hover {
+  color: #fff;
+  background-color: rgba(222, 46, 84, 0.8);
+}
+
+.main-link-solid:active {
+  color: #fff;
+  background: rgba(222, 46, 84, 0.6);
+  opacity: 1;
+}
+
+/* SITE HERO */
+
+.site-hero {
+  background-color: #0eb4c1;
+}
+
+.hero-cantainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  width: 500px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero-content-title {
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.hero-content-about {
+  width: 440px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.hero-img {
+  align-self: flex-end;
+}
+
 /* FOOTER */
 
 .site-footer {

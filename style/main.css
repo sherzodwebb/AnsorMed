@@ -9,6 +9,10 @@ body {
   background-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -91,6 +95,8 @@ body {
   opacity: 0.6;
 }
 
+/* MAIN LINK */
+
 .main-link {
   display: inline-block;
   font-family: "Open Sans Condensed", "Arial", sans-serif;
@@ -123,12 +129,29 @@ body {
 .main-link-solid:hover {
   color: #fff;
   background-color: rgba(222, 46, 84, 0.8);
+  border-color: rgba(222, 46, 84, 0.8);
 }
 
 .main-link-solid:active {
   color: #fff;
-  background: rgba(222, 46, 84, 0.6);
+  background-color: rgba(222, 46, 84, 0.6);
+  border-color: rgba(222, 46, 84, 0.6);
   opacity: 1;
+}
+
+.main-link-outline {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.main-link-outline:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main-link-outline:hover {
+  background-color: #de2e54;
+  color: #fff;
+  border-color: transparent;
 }
 
 /* SITE HERO */
@@ -258,4 +281,28 @@ body {
 .services-item-description {
   font-weight: 400;
   margin: 0;
+}
+
+/* SITE CTA */
+
+.site-cta {
+  background-color: #0eb4c1;
+}
+
+.cta-cantainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.cta-heading {
+  font-family: "Open Sans Condensed", "Open Sans", "Arial", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
